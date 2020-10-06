@@ -55,8 +55,6 @@ function Post({ postId, user, username, caption, imageUrl }) {
     };
   }, [postId]);
 
-  console.log("likes >>>>>>", likes);
-
   useEffect(() => {
     db.collection("posts")
       .doc(postId)

@@ -45,7 +45,6 @@ function App() {
   useEffect(() => {
     const unsubcribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        console.log(authUser);
         setUser(authUser);
       } else {
         setUser(null);
